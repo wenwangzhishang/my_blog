@@ -5,6 +5,12 @@
 #back 主要存放服务端代码
 
 
+1、后端目前实现了 注册 登录 修改密码
+#插件使用
+express
+supervisor
+config-lite
+
 ##目录结构
 --|web 
 -----|

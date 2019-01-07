@@ -17,7 +17,9 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0"
+  },
+  "devDependencies": {
+    "config-lite": "^2.1.0",
+    "supervisor": "^0.12.0"
   }
-
-
 }
