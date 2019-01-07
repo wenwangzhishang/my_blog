@@ -8,7 +8,16 @@
 ##目录结构
 --|web 
 -----|
---back
+--|back
+-----|bin
+-----|config
+-----|middlewares
+-----|routes
+
+-----|public
+-----|views
+-----|index.js
+-----|package.json
 
 ---|read.md
 
