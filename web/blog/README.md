@@ -1,6 +1,6 @@
 # blog
 
-> 前端页面
+> node mongodb blog
 
 ## Build Setup
 
