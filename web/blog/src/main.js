@@ -3,6 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import axios from 'axios';
+// import axios from '../httpconfig/http'
+
+Vue.prototype.axios = axios;
+// Vue.prototype.HOST = '/api'
 
 Vue.config.productionTip = false
 

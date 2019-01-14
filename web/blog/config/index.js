@@ -6,11 +6,21 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
+    env:require('./dev.env'),
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      //增加换源
+      // '/register':'http://localhost:3000',
+      '/vue': {
+          target: 'http://localhost:3000',
+          changeOrigin: true,
+          pathRewrite: {
+              '^/vue': '/'
+          }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
@@ -24,6 +34,7 @@ module.exports = {
     // If true, your code will be linted during bundling and
     // linting errors and warnings will be shown in the console.
     useEslint: true,
+
     // If true, eslint errors and warnings will also be shown in the error overlay
     // in the browser.
     showEslintErrorsInOverlay: false,
@@ -40,7 +51,8 @@ module.exports = {
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
     cacheBusting: true,
 
-    cssSourceMap: true
+    cssSourceMap: true,
+
   },
 
   build: {
