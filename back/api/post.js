@@ -3,7 +3,6 @@
 // var express = require('express');
 // var app = express();
 
-
 post("/",function(req,res){
     console.log(req.body);
 });

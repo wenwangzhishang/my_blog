@@ -22,6 +22,8 @@
   "devDependencies": {
     "config-lite": "^2.1.0",
     "ejs": "^2.6.1",
+    "mongolass": "^4.4.2",
+    "mongoose": "^5.4.4",
     "supervisor": "^0.12.0"
   }
 }
